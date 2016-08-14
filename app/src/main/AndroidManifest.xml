@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.production.jpsc.student">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Change with your package name -->
+    <permission
+        android:name="com.production.jpsc.student.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- Change with your package name -->
+    <uses-permission android:name="com.production.jpsc.student.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".ChatApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemes"
+        tools:replace="@android:icon">
+        <activity
+            android:name=".log"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivitys"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".branch"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".signupActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Syallbus"
+            android:label="@string/title_activity_syallbus"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Newsfeed"
+            android:label="@string/title_activity_newsfeed"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.production.jpsc.student.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Mechanical"
+            android:label="@string/title_activity_mechanical"
+            android:parentActivityName=".Documents"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.production.jpsc.student.Documents" />
+        </activity>
+        <activity
+            android:name=".Computer"
+            android:label="@string/title_activity_computer"
+            android:parentActivityName=".Documents"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.production.jpsc.student.Documents" />
+        </activity>
+        <activity
+            android:name=".Civil"
+            android:label="@string/title_activity_civil"
+            android:parentActivityName=".Documents"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.production.jpsc.student.Documents" />
+        </activity>
+        <activity
+            android:name=".Electronics"
+            android:label="@string/title_activity_electronics"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Smech"
+            android:label="@string/title_activity_smech"
+            android:parentActivityName=".Syallbus"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.production.jpsc.student.Syallbus" />
+        </activity>
+        <activity
+            android:name=".Scs"
+            android:label="@string/title_activity_scs"
+            android:parentActivityName=".Syallbus"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.production.jpsc.student.Syallbus" />
+        </activity>
+        <activity
+            android:name=".Scivil"
+            android:label="@string/title_activity_scivil"
+            android:parentActivityName=".Syallbus"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.production.jpsc.student.Syallbus" />
+        </activity>
+        <activity
+            android:name=".Selec"
+            android:label="@string/title_activity_selec"
+            android:parentActivityName=".Syallbus"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.production.jpsc.student.Syallbus" />
+        </activity>
+        <activity
+            android:name=".Sec"
+            android:label="@string/title_activity_sec"
+            android:parentActivityName=".Syallbus"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.production.jpsc.student.Syallbus" />
+        </activity>
+        <activity
+            android:name=".Documents"
+            android:label="@string/title_activity_documents"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Electrical"
+            android:label="@string/title_activity_electrical"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Year"
+            android:label="@string/title_activity_year"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Chat"
+            android:theme="@style/AppTheme"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+            android:name=".Information"
+            android:label="@string/title_activity_information"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Sit"
+            android:label="@string/title_activity_sit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Result"
+            android:label="@string/title_activity_result"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Web"
+            android:label="@string/title_activity_web"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tech"
+            android:label="@string/title_activity_tech"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".files"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".UserList"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".Chating"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- Change with your package name -->
+                <category android:name="com.production.jpsc.student" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".PushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+
+        <!-- add project number of google console project -->
+        <meta-data
+            android:name="com.parse.push.gcm_sender_id"
+            android:value="@string/sender_id" />
+
+        <!-- replace icons with your push icons identifier -->
+        <meta-data
+            android:name="com.parse.push.notification_icon"
+            android:resource="@drawable/push_icon" />
+
+    </application>
+
+</manifest>

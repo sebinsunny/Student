@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/c"
+            android:title="Documents" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/syllabus"
+
+            android:title="Syallbus" />
+        <item
+            android:id="@+id/nav_slideshow"
+           android:icon="@drawable/icons"
+            android:title="News feed" />
+        <item
+            android:id="@+id/nav_manage"
+           android:icon="@drawable/f"
+            android:title="Chat" />
+        <item
+            android:id="@+id/s"
+            android:icon="@drawable/up"
+            android:title="File Uploader" />
+    </group>
+
+    <item android:title="FILES">
+        <menu>
+            <item
+                android:id="@+id/about1"
+                android:icon="@drawable/up"
+                android:title="Files" />
+
+
+        </menu>
+    </item>
+
+</menu>

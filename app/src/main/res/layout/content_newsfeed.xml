@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.production.jpsc.student.Newsfeed"
+    tools:showIn="@layout/activity_newsfeed">
+
+    <ImageButton
+        android:layout_width="162.5sp"
+        android:layout_height="180sp"
+        android:id="@+id/imageButton"
+        android:padding="0dp"
+        android:layout_gravity="left"
+        android:src="@drawable/result"
+        android:scaleType="fitXY"
+        android:onClick="result"
+        android:layout_alignTop="@+id/eazybutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageButton
+        android:layout_width="162.5sp"
+        android:layout_height="180sp"
+        android:id="@+id/eazybutton"
+        android:layout_gravity="right"
+        android:padding="0dp"
+        android:src="@drawable/tech"
+        android:scaleType="fitXY"
+        android:onClick="tech"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="33dp" />
+    <ImageButton
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:id="@+id/image"
+        android:padding="0dp"
+        android:layout_gravity="center"
+        android:src="@drawable/web"
+        android:scaleType="fitXY"
+        android:onClick="web"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+</RelativeLayout>
